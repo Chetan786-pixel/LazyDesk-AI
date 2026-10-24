@@ -239,7 +239,7 @@ st.markdown(
 # --------------------------------------------------
 # A. CONFIGURATION AND SESSION STATE
 # --------------------------------------------------
-MODEL = "gemini-2.5-flash"
+MODEL = "gemini-3.5-flash-lite"
 
 try:
     GEMINI_API_KEY = str(
