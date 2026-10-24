@@ -230,6 +230,160 @@ st.markdown(
         .brand-name { font-size: 1.75rem; }
         .block-container { padding-top: 1.2rem; }
     }
+
+    
+    /* ---------- UI POLISH: SAFE CSS OVERRIDES ---------- */
+
+    .block-container {
+        max-width: 1380px;
+        padding-top: 2.2rem;
+        padding-bottom: 3rem;
+    }
+
+    .brand-row {
+        gap: 16px;
+        margin-bottom: 10px;
+    }
+
+    .brand-icon {
+        border: 1px solid #ded8ff;
+        box-shadow: 0 5px 16px rgba(101, 85, 223, 0.08);
+    }
+
+    .brand-name {
+        letter-spacing: -1.35px;
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        line-height: 1.75;
+        max-width: 760px;
+    }
+
+    .privacy-note {
+        border-radius: 14px;
+        padding: 16px 18px;
+        box-shadow: 0 3px 12px rgba(36, 107, 73, 0.035);
+    }
+
+    .feature-card {
+        height: 100%;
+        min-height: 150px;
+        border-radius: 18px;
+        padding: 23px;
+        border-color: #e4e7f1;
+        box-shadow: 0 5px 18px rgba(32, 36, 58, 0.035);
+        transition: transform 0.18s ease, box-shadow 0.18s ease,
+                    border-color 0.18s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-3px);
+        border-color: #d3ccff;
+        box-shadow: 0 10px 24px rgba(70, 57, 150, 0.08);
+    }
+
+    .feature-icon {
+        margin-bottom: 15px;
+    }
+
+    .feature-title {
+        line-height: 1.5;
+    }
+
+    .feature-copy,
+    .section-description {
+        line-height: 1.75;
+    }
+
+    [data-testid="stFileUploader"] {
+        border-radius: 18px;
+        border-color: #dfe3f0;
+        padding: 16px;
+        box-shadow: 0 4px 16px rgba(32, 36, 58, 0.025);
+    }
+
+    [data-testid="stMetric"] {
+        border-radius: 16px;
+        border-color: #e1e5f0;
+        padding: 18px 20px;
+        box-shadow: 0 4px 14px rgba(32, 36, 58, 0.025);
+    }
+
+    [data-testid="stMetricLabel"] {
+        font-weight: 600;
+    }
+
+    div.stButton > button,
+    div.stDownloadButton > button {
+        min-height: 44px;
+        border-radius: 12px;
+        font-weight: 700;
+        transition: background 0.18s ease, border-color 0.18s ease;
+    }
+
+    div.stButton > button[kind="primary"] {
+        min-height: 49px;
+        letter-spacing: 0.1px;
+    }
+
+    .category-pill {
+        padding: 7px 12px;
+        line-height: 1.6;
+        border: 1px solid #e1dbff;
+    }
+
+    .filename-box {
+        border-radius: 12px;
+        padding: 13px 15px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    [data-testid="stSidebar"] {
+        border-right-color: #e2e5ef;
+    }
+
+    .footer {
+        padding-top: 24px;
+        line-height: 2;
+    }
+
+    @media (max-width: 768px) {
+        .block-container {
+            padding: 1.25rem 1rem 2rem;
+        }
+
+        .brand-name {
+            font-size: 1.75rem;
+        }
+
+        .feature-card {
+            min-height: auto;
+            padding: 18px;
+        }
+
+        .privacy-note {
+            padding: 13px 14px;
+        }
+
+        [data-testid="stMetric"] {
+            padding: 13px;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .feature-card,
+        div.stButton > button,
+        div.stDownloadButton > button {
+            transition: none;
+        }
+
+        .feature-card:hover {
+            transform: none;
+        }
+    }
+
     </style>
     """,
     unsafe_allow_html=True,
