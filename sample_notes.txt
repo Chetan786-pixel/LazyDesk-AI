@@ -1,0 +1,7 @@
+﻿Data Structures and Algorithms
+
+Arrays store elements in sequence.
+Linked lists connect nodes using pointers.
+Binary search works on sorted arrays.
+Merge sort uses divide and conquer.
+These topics are important for computer science students.
